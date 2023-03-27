@@ -1,0 +1,20 @@
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\Develop test.exe
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\Develop test.deps.json
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\Develop test.runtimeconfig.json
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\Develop test.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\Develop test.pdb
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GameBackend.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GameBackend.pdb
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.csproj.AssemblyReference.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD_Eksamen.Form1.resources
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.csproj.GenerateResource.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.AssemblyInfoInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.AssemblyInfo.cs
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.csproj.CoreCompileInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.csproj.CopyComplete
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\refint\Develop test.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.pdb
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\Develop test.genruntimeconfig.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\ref\Develop test.dll

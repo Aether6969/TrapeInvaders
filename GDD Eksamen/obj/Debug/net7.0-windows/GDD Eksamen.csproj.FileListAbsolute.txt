@@ -1,0 +1,17 @@
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GDD Eksamen.exe
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GDD Eksamen.deps.json
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GDD Eksamen.runtimeconfig.json
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GDD Eksamen.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\bin\Debug\net7.0-windows\GDD Eksamen.pdb
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.csproj.AssemblyReference.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD_Eksamen.Form1.resources
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.csproj.GenerateResource.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.AssemblyInfoInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.AssemblyInfo.cs
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.csproj.CoreCompileInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\refint\GDD Eksamen.dll
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.pdb
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\GDD Eksamen.genruntimeconfig.cache
+C:\Users\Rolfj\Desktop\Repost Git\GDD Eksamen\GDD Eksamen\obj\Debug\net7.0-windows\ref\GDD Eksamen.dll
