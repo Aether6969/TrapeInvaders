@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj",
-      "projectName": "GameBackend",
-      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj",
+      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj",
+      "projectName": "TrapeInvaders",
+      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj",
       "packagesPath": "C:\\Users\\Rolfj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\obj\\",
+      "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

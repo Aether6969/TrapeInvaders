@@ -7,10 +7,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;Assert</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GameBackend\GameBackend.csproj" />
+    <ProjectReference Include="..\GameBackend\TrapeInvaders.csproj" />
   </ItemGroup>
 
 </Project>

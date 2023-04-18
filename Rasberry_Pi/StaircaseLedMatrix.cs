@@ -1,17 +1,17 @@
-﻿using GameBackend;
-using Iot.Device.Media;
-using Iot.Device.Nrf24l01;
-using Iot.Device.OneWire;
+﻿using TrapeInvadersEngine;
 using Iot.Device.Ws28xx;
 using System.Device.Spi;
+using TrapeInvaders;
 
 namespace Rasberry_Pi
 {
     internal sealed class StaircaseLedMatrix : IRenderTarget
     {
-        Ws2812b strip;
+        Ws2812b Strip;
         public int Width { get; }
         public int Height { get; }
+
+        public double GBrightness;
 
         public StaircaseLedMatrix(int width, int height)
         {
@@ -22,25 +22,35 @@ namespace Rasberry_Pi
                 DataBitLength = 8
             };
             SpiDevice spiDevice = SpiDevice.Create(spiConnectionSettings);
-            this.strip = new Ws2812b(spiDevice, width * height);
+            this.Strip = new Ws2812b(spiDevice, width * height);
             
             this.Width = width;
             this.Height = height;
+            this.GBrightness = 0.25d;
         }
 
         public Pixel this[int x, int y] 
         { 
             set
             {
-                strip.Image.SetPixel(y * Width + x, 0, value);
+                //Reverses every odd line
+                int flatIndex;
+                if (y % 2 == 1)
+                {
+                    flatIndex = (y * Width) + (Width - x);
+                }
+                else
+                {
+                    flatIndex = (y * Width) + x;
+                }
+
+                Strip.Image.SetPixel(flatIndex, 0, value * GBrightness);
             }
         }
 
         public void Draw()
         {
-            strip.Update();
-
-            Console.WriteLine("updated strip");
+            Strip.Update();
         }
     }
 }

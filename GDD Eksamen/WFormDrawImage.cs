@@ -1,9 +1,10 @@
-﻿using GameBackend;
+﻿using TrapeInvadersEngine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace GDD_Eksamen
 {
@@ -29,6 +30,8 @@ namespace GDD_Eksamen
         {
             set
             {
+                Debug.Assert(!(x > (Width - 1) || y > (Height - 1)));
+
                 _BackigTarget.FillEllipse(
                     new SolidBrush(value), 
                     new Rectangle((int)(x * 7.5d), (int)(y * 7.5d), diameter, diameter));

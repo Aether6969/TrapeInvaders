@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\Develop test.csproj": {}
+    "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj": {
+    "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj",
-        "projectName": "GameBackend",
-        "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj",
+        "projectName": "TrapeInvaders",
+        "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj",
         "packagesPath": "C:\\Users\\Rolfj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\obj\\",
+        "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\Develop test.csproj": {
+    "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\Develop test.csproj",
+        "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj",
         "projectName": "Develop test",
-        "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\Develop test.csproj",
+        "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj",
         "packagesPath": "C:\\Users\\Rolfj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\obj\\",
+        "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj": {
-                "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj"
+              "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj": {
+                "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj"
               }
             }
           }

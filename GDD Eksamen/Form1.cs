@@ -1,4 +1,4 @@
-using GameBackend;
+using TrapeInvadersEngine;
 using static System.Net.WebRequestMethods;
 
 namespace GDD_Eksamen
@@ -53,6 +53,11 @@ namespace GDD_Eksamen
             });
 
             thread.Start();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

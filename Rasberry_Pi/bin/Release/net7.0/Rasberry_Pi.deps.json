@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v7.0": {
       "Rasberry_Pi/1.0.0": {
         "dependencies": {
-          "GameBackend": "1.0.0",
           "Iot.Device.Bindings": "2.2.0",
-          "System.Device.Gpio": "2.2.0"
+          "System.Device.Gpio": "2.2.0",
+          "TrapeInvaders": "1.0.0"
         },
         "runtime": {
           "Rasberry_Pi.dll": {}
@@ -245,9 +245,9 @@
           }
         }
       },
-      "GameBackend/1.0.0": {
+      "TrapeInvaders/1.0.0": {
         "runtime": {
-          "GameBackend.dll": {}
+          "TrapeInvaders.dll": {}
         }
       }
     }
@@ -419,7 +419,7 @@
       "path": "unitsnet/4.77.0",
       "hashPath": "unitsnet.4.77.0.nupkg.sha512"
     },
-    "GameBackend/1.0.0": {
+    "TrapeInvaders/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

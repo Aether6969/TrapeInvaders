@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
-      "GameBackend/1.0.0": {
+      "TrapeInvaders/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/GameBackend.dll": {}
+          "bin/placeholder/TrapeInvaders.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameBackend.dll": {}
+          "bin/placeholder/TrapeInvaders.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "GameBackend/1.0.0": {
+    "TrapeInvaders/1.0.0": {
       "type": "project",
-      "path": "../GameBackend/GameBackend.csproj",
-      "msbuildProject": "../GameBackend/GameBackend.csproj"
+      "path": "../GameBackend/TrapeInvaders.csproj",
+      "msbuildProject": "../GameBackend/TrapeInvaders.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "GameBackend >= 1.0.0"
+      "TrapeInvaders >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\Develop test.csproj",
+      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj",
       "projectName": "Develop test",
-      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\Develop test.csproj",
+      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj",
       "packagesPath": "C:\\Users\\Rolfj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GDD Eksamen\\obj\\",
+      "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj": {
-              "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\GameBackend\\GameBackend.csproj"
+            "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj": {
+              "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameBackend\\TrapeInvaders.csproj"
             }
           }
         }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\Tools\\Tools.csproj",
+      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Tools\\Tools.csproj",
       "projectName": "Tools",
-      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\Tools\\Tools.csproj",
+      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Tools\\Tools.csproj",
       "packagesPath": "C:\\Users\\Rolfj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\Tools\\obj\\",
+      "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Tools\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

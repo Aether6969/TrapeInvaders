@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7B6fVbME8dS+D2KUONLcNicq7OAOfROMS6tcvyrQ3g3hU8cnG1rtWQ/yzn6iY9Qh7/e04uMGvUNKxGSxpxn1qw==",
+  "dgSpecHash": "/dXHGKCHF1EnNEzis79F8uKbqMlgqcYPVrpSe1qZa7Idb85QoAsJVHX0CCDAb/+hm1DqwRUQSuaLAoqFPtEa5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\GDD-Eksamen\\Rasberry_Pi\\Rasberry_Pi.csproj",
+  "projectFilePath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Rasberry_Pi\\Rasberry_Pi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rolfj\\.nuget\\packages\\iot.device.bindings\\2.2.0\\iot.device.bindings.2.2.0.nupkg.sha512",
     "C:\\Users\\Rolfj\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
