@@ -1,15 +1,14 @@
-﻿using TrapeInvadersEngine;
+﻿using TrapeInvaders;
 using Iot.Device.Ws28xx;
 using System.Device.Spi;
-using TrapeInvaders;
 
 namespace Rasberry_Pi
 {
     internal sealed class StaircaseLedMatrix : IRenderTarget
     {
         Ws2812b Strip;
-        public int Width { get; }
-        public int Height { get; }
+
+        public Vec2 Size { get; }
 
         public double GBrightness;
 
@@ -24,8 +23,7 @@ namespace Rasberry_Pi
             SpiDevice spiDevice = SpiDevice.Create(spiConnectionSettings);
             this.Strip = new Ws2812b(spiDevice, width * height);
             
-            this.Width = width;
-            this.Height = height;
+            this.Size = new Vec2(width, height);
             this.GBrightness = 0.25d;
         }
 
@@ -37,11 +35,11 @@ namespace Rasberry_Pi
                 int flatIndex;
                 if (y % 2 == 1)
                 {
-                    flatIndex = (y * Width) + (Width - x);
+                    flatIndex = (y * Size.x) + ((Size.x - 1) - x);
                 }
                 else
                 {
-                    flatIndex = (y * Width) + x;
+                    flatIndex = (y * Size.x) + x;
                 }
 
                 Strip.Image.SetPixel(flatIndex, 0, value * GBrightness);

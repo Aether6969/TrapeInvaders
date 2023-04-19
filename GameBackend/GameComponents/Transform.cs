@@ -1,4 +1,4 @@
-﻿namespace TrapeInvadersEngine
+﻿namespace TrapeInvaders
 {
     public sealed class Transform
     {

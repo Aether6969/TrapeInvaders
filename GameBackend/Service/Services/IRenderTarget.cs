@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TrapeInvadersEngine
+﻿namespace TrapeInvaders
 {
     public interface IRenderTarget
     {
-        public int Width { get; }
-        public int Height { get; }
+        public Vec2 Size { get; }
 
         public Pixel this[int x, int y] { set; }
 

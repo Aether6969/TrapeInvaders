@@ -1,17 +1,21 @@
 ﻿using TrapeInvaders;
 
-namespace TrapeInvadersEngine
+namespace TrapeInvaders
 {
-    public interface IGameObj
+    public abstract class GameObj
     {
         public Game Game { get; }
         public Transform Transform { get; }
         public Texture Texture { get; }
 
-        public IGameObj Create(Vec2 pos, Vec2 size, Game game);
+        public GameObj(Game game, Transform transform, Texture texture)
+        {
+            this.Game = game;
+            this.Transform = transform;
+            this.Texture = texture;
+        }
 
-        public void Inizialize() { }
-        public void Update() { }
-        public void Draw() { }
+        public virtual void Inizialize() { }
+        public virtual void Update() { }
     }
 }

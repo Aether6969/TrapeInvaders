@@ -1,9 +1,4 @@
-﻿using TrapeInvadersEngine;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TrapeInvaders;
 using System.Diagnostics;
 
 namespace GDD_Eksamen
@@ -15,13 +10,11 @@ namespace GDD_Eksamen
 
         const int diameter = 7;
 
-        public int Width { get; }
-        public int Height { get; }
+        public Vec2 Size { get; }
 
         public WFDrawImage(int width, int height, Graphics graphics, Action draw) 
         { 
-            this.Width = width;
-            this.Height = height;
+            this.Size = new Vec2(width, height);
             this._BackigTarget = graphics;
             this._Draw = draw;
         }
@@ -30,7 +23,7 @@ namespace GDD_Eksamen
         {
             set
             {
-                Debug.Assert(!(x > (Width - 1) || y > (Height - 1)));
+                Debug.Assert(!(x > (Size.x - 1) || y > (Size.y - 1)));
 
                 _BackigTarget.FillEllipse(
                     new SolidBrush(value), 

@@ -1,9 +1,4 @@
-﻿using TrapeInvadersEngine;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TrapeInvaders;
 
 namespace GDD_Eksamen
 {
@@ -11,11 +6,11 @@ namespace GDD_Eksamen
     {
         public float Vertical => throw new NotImplementedException();
 
-        public float Horizontal => throw new NotImplementedException();
+        public float Horizontal => 0;
 
         public bool GetKeyShoot()
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }

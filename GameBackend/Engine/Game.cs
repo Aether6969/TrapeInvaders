@@ -1,15 +1,15 @@
-﻿using System.Text;
+﻿using System;
 using System.Timers;
 using TrapeInvaders;
 
-namespace TrapeInvadersEngine
+namespace TrapeInvaders
 {
     public abstract class Game
     {
         public IInputManager InputManager { get; }
         public IRenderTarget RenderTarget { get; }
 
-        Dictionary<int, IGameObj> _GameObjects;
+        Dictionary<int, GameObj> _GameObjects;
 
         bool _Running = false;
         bool _Cancled = false;
@@ -19,79 +19,81 @@ namespace TrapeInvadersEngine
             InputManager = inputManager;
             RenderTarget = renderTarget;
 
-            _GameObjects = new Dictionary<int, IGameObj>();
+            _GameObjects = new Dictionary<int, GameObj>();
         }
 
         public void Run()
         {
             _Running = true;
 
-            while (!_Cancled)
-            {
-                for (int y = 0; y < RenderTarget.Height; y++)
-                {
-                    for (int x = 0; x < RenderTarget.Width; x++)
-                    {
-                        Vec2 point = new Vec2(x, y);
-
-                        double dist = (point - new Vec2(25, 50)).Len;
-
-                        Pixel pixel = new Pixel(0, 255, 0) * Math.Abs(Math.Cos(((dist)*0.2) + DateTime.Now.Ticks * -0.0000001));
-                        RenderTarget[x, y] = pixel;
-                    }
-                }
-
-                RenderTarget.Draw();
-            }
-
-            _Running = true;
-
             InizializeGameObjects();
 
+            const double TPS = 10;
+            long lastUpdate = DateTime.Now.Ticks;
+            bool elasped = false;
             while (!_Cancled)
             {
-                //Todo: have timings for draw and update
-
-                UpdateGameObjects();
-
-                DrawGameObjects();
-
-                RenderTarget.Draw();
+                if ((DateTime.Now.Ticks - lastUpdate) / TimeSpan.TicksPerMillisecond > 1000 / TPS)
+                {
+                    elasped = true;
+                    lastUpdate = DateTime.Now.Ticks;
+                }
+                if (elasped)
+                {
+                    elasped = false;
+                    UpdateGame();
+                }
             }
         }
+
+        private void UpdateGame()
+        {
+            RenderTarget.Clear(Pixel.None);
+
+            UpdateGameObjects();
+
+            DrawGameObjects();
+
+            RenderTarget.Draw();
+        }
+
         public void Cancel() 
         {
             _Cancled = true;
 
             if (!_Running)
             {
-                Log.Warn(new Exception("The game was cancled enven though it never started"));
+                Log.Warn(new Exception("The game was cancled even though it never started"));
             }
         }
 
-        public void AddObject(IGameObj gameObj)
+        public void AddObjectToScene(GameObj gameObj)
         {
             _GameObjects.Add(gameObj.Transform.Id, gameObj);
+        }
+        public void Instantiate(GameObj gameObj)
+        {
+            AddObjectToScene(gameObj);
             gameObj.Inizialize();
         }
 
         private void InizializeGameObjects()
         {
-            foreach (IGameObj gameObj in _GameObjects.Values)
+            foreach (GameObj gameObj in _GameObjects.Values)
             {
                 gameObj.Inizialize();
             }
         }
         private void UpdateGameObjects()
         {
-            foreach (IGameObj gameObj in _GameObjects.Values)
+            foreach (GameObj gameObj in _GameObjects.Values)
             {
                 gameObj.Update();
             }
         }
         private void DrawGameObjects()
         {
-            foreach (IGameObj gameObj in _GameObjects.Values)
+            foreach (GameObj gameObj in _GameObjects.Values)
             {
                 gameObj.Draw();
             }

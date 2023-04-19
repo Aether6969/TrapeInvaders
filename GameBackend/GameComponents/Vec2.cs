@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Contracts;
 using System.Runtime.InteropServices;
 
-namespace TrapeInvadersEngine
+namespace TrapeInvaders
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct Vec2
@@ -24,6 +24,16 @@ namespace TrapeInvadersEngine
         public Vec2 WithY(int y)
         {
             return new Vec2(x, y);
+        }
+
+        public bool IsInRange(Range rangeX, Range rangeY)
+        {
+            if (rangeX.Start.Value <= x && rangeX.End.Value >= x && rangeY.Start.Value <= y && rangeY.End.Value >= y)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public static implicit operator Vec2(int scalar)

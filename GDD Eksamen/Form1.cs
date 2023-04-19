@@ -1,4 +1,4 @@
-using TrapeInvadersEngine;
+using TrapeInvaders;
 using static System.Net.WebRequestMethods;
 
 namespace GDD_Eksamen

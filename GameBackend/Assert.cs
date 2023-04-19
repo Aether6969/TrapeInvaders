@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace TrapeInvadersEngine
+namespace TrapeInvaders
 {
     internal static class Assert
     {

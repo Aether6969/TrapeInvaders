@@ -1,4 +1,4 @@
-using TrapeInvadersEngine;
+using TrapeInvaders;
 
 namespace GDD_Eksamen
 {
