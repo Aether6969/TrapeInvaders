@@ -41,6 +41,10 @@ namespace TrapeInvaders
             return new Vec2(scalar, scalar);
         }
 
+        public static Vec2 operator + (Vec2 left, Vec2 right)
+        {
+            return new Vec2(left.x + right.x, left.y + right.y);
+        }
         public static Vec2 operator - (Vec2 left, Vec2 right)
         {
             return new Vec2(left.x - right.x, left.y - right.y);

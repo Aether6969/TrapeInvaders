@@ -9,6 +9,8 @@ namespace TrapeInvaders
         public IInputManager InputManager { get; }
         public IRenderTarget RenderTarget { get; }
 
+        public long FramesFromStart { get; private set; }
+
         Dictionary<int, GameObj> _GameObjects;
 
         bool _Running = false;
@@ -24,6 +26,35 @@ namespace TrapeInvaders
 
         public void Run()
         {
+            //while (true)
+            //{
+            //    for (int x = 0; x < RenderTarget.Size.x; x++)
+            //    {
+            //        for (int y = 0; y < RenderTarget.Size.y; y++)
+            //        {
+            //            int timeMod = (int)(DateTime.Now.Ticks / TimeSpan.TicksPerSecond);
+
+            //            Vec2 pos = new Vec2(x + timeMod, y + timeMod);
+
+            //            Pixel pix = Pixel.FunnyYellow;
+
+            //            if (pos.x % 6 == 0)
+            //            {
+            //                pix = Pixel.AlienBlue;
+            //            }
+            //            if (pos.y % 6 == 0)
+            //            {
+            //                pix = Pixel.PlayerGreen;
+            //            }
+
+            //            RenderTarget[x, y] = pix;
+            //        }
+            //    }
+
+            //    RenderTarget.Draw();    
+            //}
+
+
             _Running = true;
 
             InizializeGameObjects();
@@ -48,6 +79,8 @@ namespace TrapeInvaders
 
         private void UpdateGame()
         {
+            FramesFromStart++;
+
             RenderTarget.Clear(Pixel.None);
 
             UpdateGameObjects();
@@ -75,6 +108,11 @@ namespace TrapeInvaders
         {
             AddObjectToScene(gameObj);
             gameObj.Inizialize();
+        }
+
+        public void ClearScene()
+        {
+            _GameObjects.Clear();
         }
 
         private void InizializeGameObjects()

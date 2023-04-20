@@ -17,6 +17,7 @@ namespace TrapeInvaders
             Color = col;
         }
 
-        public override Pixel this[int x, int y] => _Image[y * Width + x] != 0 ? Color : Pixel.None;
+        //flip y and draw color if byte not 0
+        public override Pixel this[int x, int y] => _Image[(Height - 1 - y) * Width + x] != 0 ? Color : Pixel.None;
     }
 }

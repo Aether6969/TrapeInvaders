@@ -6,7 +6,7 @@ namespace GDD_Eksamen
     {
         public float Vertical => throw new NotImplementedException();
 
-        public float Horizontal => 0;
+        public float Horizontal => -1;
 
         public bool GetKeyShoot()
         {

@@ -12,6 +12,12 @@ namespace TrapeInvaders
             this.G = g;
             this.B = b;
         }
+        public Pixel(double r, double g, double b)
+        {
+            this.R = (byte)(r * 255);
+            this.G = (byte)(g * 255);
+            this.B = (byte)(b * 255);
+        }
 
         public static readonly Pixel None           = new Pixel(0, 0, 0);
         public static readonly Pixel AlienBlue      = new Pixel(0, 0, 255);
@@ -27,11 +33,19 @@ namespace TrapeInvaders
         }
         public static Pixel operator * (Pixel col, double scalar)
         {
-            byte R = (byte)(col.R * scalar);
-            byte G = (byte)(col.G * scalar);
-            byte B = (byte)(col.B * scalar);
 
-            return new Pixel(R, G, B);
+            return new Pixel(
+                (byte)(col.R * scalar), 
+                (byte)(col.G * scalar), 
+                (byte)(col.B * scalar));
+        }
+        public static Pixel operator *(Pixel left, Pixel right)
+        {
+
+            return new Pixel(
+                (byte)(left.R * (right.R / 255d)), 
+                (byte)(left.G * (right.G / 255d)), 
+                (byte)(left.B * (right.B / 255d)));
         }
 
         public static implicit operator Pixel(double scalar)
@@ -42,6 +56,7 @@ namespace TrapeInvaders
 
             return new Pixel(b, b, b);
         }
+
         public static implicit operator Color(Pixel pixel)
         {
             return Color.FromArgb(pixel.R, pixel.G, pixel.B);

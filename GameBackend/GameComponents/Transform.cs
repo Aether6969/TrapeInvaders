@@ -21,6 +21,11 @@
         private static int _Count;
         public static int Count => _Count++;
 
+        public Transform()
+        {
+            Id = Count;
+            _Rect = new Rect();
+        }
         public Transform(Vec2 pos, Vec2 size)
         {
             Id = Count;

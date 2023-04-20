@@ -17,7 +17,13 @@ namespace TrapeInvaders.Games
         {
             IInputManager input = Game.InputManager;
 
-            Transform.Pos = new Vec2(Transform.Pos.x + (int)input.Horizontal, Transform.Pos.y);
+            int x = Transform.Pos.x + (int)input.Horizontal;
+            if (x < 0 || x + Texture!.Width > 50)
+            {
+                x = Transform.Pos.x;
+            }
+
+            Transform.Pos = new Vec2(x, Transform.Pos.y);
 
             if (input.GetKeyShoot())
             {

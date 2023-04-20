@@ -10,23 +10,23 @@
         }
         InvaderType type;
 
-        private Invader(Game game, Transform transform, InvaderType invaderType) 
+        public InvaderGroupe groupe;
+
+        private Invader(Game game, Transform transform, InvaderGroupe groupe, InvaderType invaderType) 
             : base(game, transform, Textures.GetTextureByInvader(invaderType)) 
         { 
-            type = invaderType; 
+            this.type = invaderType; 
+            this.groupe = groupe;
+            groupe.invaders.Add(this);
         }
 
-        public static Invader Create(InvaderType invaderType, Vec2 pos, Game game)
+        public static Invader Create(InvaderType invaderType, InvaderGroupe groupe, Vec2 pos, Game game)
         {
-            return new Invader(game, 
+            return new Invader(
+                game, 
                 new Transform(pos, new Vec2(5, 5)),
+                groupe,
                 invaderType);
         }
-
-        public override void Update()
-        {
-            
-        }
-
     }
 }

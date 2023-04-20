@@ -6,7 +6,7 @@ namespace Rasberry_Pi
 {
     internal sealed class StaircaseLedMatrix : IRenderTarget
     {
-        Ws2812b Strip;
+        private Ws2812b Strip;
 
         public Vec2 Size { get; }
 
@@ -33,13 +33,14 @@ namespace Rasberry_Pi
             {
                 //Reverses every odd line
                 int flatIndex;
+                int rowMod = (y * Size.x);
                 if (y % 2 == 1)
                 {
-                    flatIndex = (y * Size.x) + ((Size.x - 1) - x);
+                    flatIndex = rowMod + ((Size.x - 1) - x);
                 }
                 else
                 {
-                    flatIndex = (y * Size.x) + x;
+                    flatIndex = rowMod + x;
                 }
 
                 Strip.Image.SetPixel(flatIndex, 0, value * GBrightness);

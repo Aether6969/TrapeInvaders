@@ -27,7 +27,7 @@ namespace GDD_Eksamen
 
                 _BackigTarget.FillEllipse(
                     new SolidBrush(value), 
-                    new Rectangle((int)(x * 7.5d), (int)(y * 7.5d), diameter, diameter));
+                    new Rectangle((int)(x * 7.5d), (int)((Size.y - 1 - y) * 7.5d), diameter, diameter));
             }
         }
 
