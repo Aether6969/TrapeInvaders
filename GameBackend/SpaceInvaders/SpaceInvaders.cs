@@ -1,4 +1,4 @@
-﻿using TrapeInvaders.Games;
+﻿using GameEngine;
 
 namespace TrapeInvaders
 {
@@ -8,10 +8,16 @@ namespace TrapeInvaders
         public SpaceInvaders(IInputManager inputManager, IRenderTarget renderTarget) : 
             base(inputManager, renderTarget)
         {
+            SetUpSapceInvaders();
+        }
+
+        private void SetUpSapceInvaders()
+        {
             AddObjectToScene(
                 Player.Create(
                     new Vec2(22, 88),
-                    this));
+                    this,
+                    GameState));
 
             AddInvadersToScene();
         }
@@ -35,7 +41,7 @@ namespace TrapeInvaders
                             Invader.InvaderType.TopBoy,
                             groupe,
                             new Vec2(x, y),
-                        this));
+                            this));
                     }
                     if (row is 2 or 3)
                     {
@@ -44,7 +50,7 @@ namespace TrapeInvaders
                             Invader.InvaderType.MidBoy,
                             groupe,
                             new Vec2(x, y),
-                        this));
+                            this));
                     }
                     if (row is 0 or 1)
                     {
@@ -53,7 +59,7 @@ namespace TrapeInvaders
                             Invader.InvaderType.BottomBoy,
                             groupe,
                             new Vec2(x, y),
-                        this));
+                            this));
                     }
                 }
             }

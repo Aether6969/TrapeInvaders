@@ -1,20 +1,28 @@
-﻿using TrapeInvaders;
+﻿using GameEngine;
 
-namespace TrapeInvaders.Games
+namespace TrapeInvaders
 {
     public sealed class Player : GameObj
     {
-        private Player(Transform transform, Game game) : base(game, transform, Textures.Player) { }
+        public GameState GameState { get; }
+        private Player(Transform transform, Game game, GameState gameState) 
+            : base(game, transform, Textures.Player) 
+        { 
+            this.GameState = gameState;
+        }
 
-        public static Player Create(Vec2 pos, Game game)
+        public static Player Create(Vec2 pos, Game game, GameState gameState)
         {
             return new Player(
                 new Transform(pos, new Vec2(7, 5)), 
-                game);
+                game,
+                gameState);
         }
 
         public override void Update()
         {
+            if (!Game.OnecePerFrames(2)) return;
+
             IInputManager input = Game.InputManager;
 
             int x = Transform.Pos.x + (int)input.Horizontal;

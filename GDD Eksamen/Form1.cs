@@ -1,5 +1,5 @@
 using TrapeInvaders;
-using static System.Net.WebRequestMethods;
+using GameEngine;
 
 namespace GDD_Eksamen
 {

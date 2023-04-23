@@ -14,7 +14,15 @@
           "Develop test.dll": {}
         }
       },
+      "GameEngine/1.0.0": {
+        "runtime": {
+          "GameEngine.dll": {}
+        }
+      },
       "TrapeInvaders/1.0.0": {
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
         "runtime": {
           "TrapeInvaders.dll": {}
         }
@@ -23,6 +31,11 @@
   },
   "libraries": {
     "Develop test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GameEngine/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

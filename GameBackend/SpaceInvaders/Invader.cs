@@ -1,6 +1,8 @@
-﻿namespace TrapeInvaders
+﻿using GameEngine;
+
+namespace TrapeInvaders
 {
-    internal class Invader : GameObj
+    internal sealed class Invader : GameObj
     {
         public enum InvaderType
         {
@@ -27,6 +29,12 @@
                 new Transform(pos, new Vec2(5, 5)),
                 groupe,
                 invaderType);
+        }
+
+        public void Destroy()
+        {
+            Game.RemoveObject(this);
+            groupe.invaders.Remove(this);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using TrapeInvaders;
+﻿using GameEngine;
 
 namespace GDD_Eksamen
 {
@@ -10,7 +10,7 @@ namespace GDD_Eksamen
 
         public bool GetKeyShoot()
         {
-            return false;
+            return true;
         }
     }
 }

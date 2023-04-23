@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvaders", "GameBacken
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rasberry_Pi", "Rasberry_Pi\Rasberry_Pi.csproj", "{54B1C95C-338F-4799-AE45-A836801A7123}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine", "GameEngine\GameEngine.csproj", "{95679389-8024-4548-AC43-FC17F06A983A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95679389-8024-4548-AC43-FC17F06A983A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95679389-8024-4548-AC43-FC17F06A983A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95679389-8024-4548-AC43-FC17F06A983A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95679389-8024-4548-AC43-FC17F06A983A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
