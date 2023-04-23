@@ -3,36 +3,45 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvadersFormsTest", "GDD Eksamen\TrapeInvadersFormsTest.csproj", "{9763852D-4BF1-4DCB-93E2-D0385C7B17F0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvaders", "GameBackend\TrapeInvaders.csproj", "{53A48308-C173-4F22-9D8B-FE098D500E9D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rasberry_Pi", "Rasberry_Pi\Rasberry_Pi.csproj", "{54B1C95C-338F-4799-AE45-A836801A7123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine", "GameEngine\GameEngine.csproj", "{95679389-8024-4548-AC43-FC17F06A983A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameEngine", "GameEngine\GameEngine.csproj", "{95679389-8024-4548-AC43-FC17F06A983A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvadersFormsTest", "TrapeInvadersFormsTest\TrapeInvadersFormsTest.csproj", "{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvaders", "TrapeInvaders\TrapeInvaders.csproj", "{70952702-1DF4-4FDA-8464-31588B19F1F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Assert|Any CPU = Assert|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9763852D-4BF1-4DCB-93E2-D0385C7B17F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9763852D-4BF1-4DCB-93E2-D0385C7B17F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9763852D-4BF1-4DCB-93E2-D0385C7B17F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9763852D-4BF1-4DCB-93E2-D0385C7B17F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53A48308-C173-4F22-9D8B-FE098D500E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53A48308-C173-4F22-9D8B-FE098D500E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53A48308-C173-4F22-9D8B-FE098D500E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53A48308-C173-4F22-9D8B-FE098D500E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B1C95C-338F-4799-AE45-A836801A7123}.Assert|Any CPU.ActiveCfg = Release|Any CPU
+		{54B1C95C-338F-4799-AE45-A836801A7123}.Assert|Any CPU.Build.0 = Release|Any CPU
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54B1C95C-338F-4799-AE45-A836801A7123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95679389-8024-4548-AC43-FC17F06A983A}.Assert|Any CPU.ActiveCfg = Release|Any CPU
+		{95679389-8024-4548-AC43-FC17F06A983A}.Assert|Any CPU.Build.0 = Release|Any CPU
 		{95679389-8024-4548-AC43-FC17F06A983A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{95679389-8024-4548-AC43-FC17F06A983A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95679389-8024-4548-AC43-FC17F06A983A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95679389-8024-4548-AC43-FC17F06A983A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}.Assert|Any CPU.ActiveCfg = Assert|Any CPU
+		{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}.Assert|Any CPU.Build.0 = Assert|Any CPU
+		{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9D6AA9-C0F6-40BE-BC19-D7D4ED929E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70952702-1DF4-4FDA-8464-31588B19F1F6}.Assert|Any CPU.ActiveCfg = Assert|Any CPU
+		{70952702-1DF4-4FDA-8464-31588B19F1F6}.Assert|Any CPU.Build.0 = Assert|Any CPU
+		{70952702-1DF4-4FDA-8464-31588B19F1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70952702-1DF4-4FDA-8464-31588B19F1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70952702-1DF4-4FDA-8464-31588B19F1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70952702-1DF4-4FDA-8464-31588B19F1F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

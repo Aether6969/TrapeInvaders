@@ -1,0 +1,44 @@
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.exe
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.deps.json
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.runtimeconfig.json
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\GameEngine.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvaders.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\TrapeInvaders.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\bin\Debug\net7.0-windows\GameEngine.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.AssemblyReference.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.Form1.resources
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.GenerateResource.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.AssemblyInfoInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.AssemblyInfo.cs
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.CoreCompileInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.CopyComplete
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\refint\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.genruntimeconfig.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\GDD Eksamen\obj\Debug\net7.0-windows\ref\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.exe
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.deps.json
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.runtimeconfig.json
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvadersFormsTest.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\GameEngine.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvaders.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\TrapeInvaders.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\bin\Debug\net7.0-windows\GameEngine.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.AssemblyReference.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.Form1.resources
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.GenerateResource.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.AssemblyInfoInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.AssemblyInfo.cs
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.CoreCompileInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.csproj.CopyComplete
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\refint\TrapeInvadersFormsTest.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\TrapeInvadersFormsTest.genruntimeconfig.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\TrapeInvadersFormsTest\obj\Debug\net7.0-windows\ref\TrapeInvadersFormsTest.dll
