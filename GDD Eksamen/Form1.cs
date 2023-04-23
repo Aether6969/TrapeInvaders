@@ -1,7 +1,7 @@
 using TrapeInvaders;
 using GameEngine;
 
-namespace GDD_Eksamen
+namespace TrapeInvadersFormsTest
 {
     public partial class Form1 : Form
     {

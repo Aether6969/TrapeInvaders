@@ -1,7 +1,7 @@
 ﻿using GameEngine;
 using System.Diagnostics;
 
-namespace GDD_Eksamen
+namespace TrapeInvadersFormsTest
 {
     internal sealed class WFDrawImage : IRenderTarget
     {

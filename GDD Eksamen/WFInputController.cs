@@ -1,6 +1,6 @@
 ﻿using GameEngine;
 
-namespace GDD_Eksamen
+namespace TrapeInvadersFormsTest
 {
     internal sealed class WFInputController : IInputManager
     {

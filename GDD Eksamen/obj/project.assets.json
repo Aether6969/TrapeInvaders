@@ -51,9 +51,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj",
-      "projectName": "Develop test",
-      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\Develop test.csproj",
+      "projectUniqueName": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\TrapeInvadersFormsTest.csproj",
+      "projectName": "TrapeInvadersFormsTest",
+      "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\TrapeInvadersFormsTest.csproj",
       "packagesPath": "C:\\Users\\Rolfj\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GDD Eksamen\\obj\\",
       "projectStyle": "PackageReference",

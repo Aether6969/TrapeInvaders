@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TrapeInvadersFormsTest/1.0.0": {
+        "dependencies": {
+          "TrapeInvaders": "1.0.0"
+        },
+        "runtime": {
+          "TrapeInvadersFormsTest.dll": {}
+        }
+      },
+      "GameEngine/1.0.0": {
+        "runtime": {
+          "GameEngine.dll": {}
+        }
+      },
+      "TrapeInvaders/1.0.0": {
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
+        "runtime": {
+          "TrapeInvaders.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrapeInvadersFormsTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GameEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrapeInvaders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

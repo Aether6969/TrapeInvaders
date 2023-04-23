@@ -1,4 +1,4 @@
-﻿namespace GDD_Eksamen
+﻿namespace TrapeInvadersFormsTest
 {
     partial class Form1
     {

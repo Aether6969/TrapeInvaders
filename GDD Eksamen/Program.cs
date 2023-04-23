@@ -1,12 +1,7 @@
-using TrapeInvaders;
-
-namespace GDD_Eksamen
+namespace TrapeInvadersFormsTest
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
