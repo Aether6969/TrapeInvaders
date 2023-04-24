@@ -16,7 +16,7 @@ namespace GameEngine
 
         private MonoColTexture _DigitTexture;
 
-        public DigitTexture(int width, int height, byte digit) : base(width, height) 
+        public DigitTexture(byte digit) : base(3, 5) 
         { 
             this.Digit = digit;
             this._DigitTexture = DigitTextures.GetTextureByDigit(digit);

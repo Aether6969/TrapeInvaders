@@ -29,7 +29,7 @@
                 {
                     //draw texture to screne using size for the parts that fit on screen
                     Vec2 pixp = new Vec2(Transform.Pos.x + x, Transform.Pos.y + y);
-                    if (pixp.IsInRange(0..(Game.RenderTarget.Size.x - 1), 0..(Game.RenderTarget.Size.y - 1)))
+                    if (pixp > -1 && pixp.x < Game.RenderTarget.Size.x && pixp.y < Game.RenderTarget.Size.y)
                     {
                         Game.RenderTarget[pixp.x, pixp.y] = Texture[x, y];
                     }
@@ -40,6 +40,11 @@
         public static bool Overlaps(GameObj obj1, GameObj obj2)
         {
             return Rect.Overlaps(obj1.Transform.Rect, obj2.Transform.Rect);
+        }
+
+        public override string ToString()
+        {
+            return $"{ this.GetType().Name }, Tex { Texture }, Tra { Transform }";
         }
     }
 }

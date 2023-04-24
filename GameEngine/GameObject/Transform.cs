@@ -1,4 +1,6 @@
-﻿namespace GameEngine
+﻿using System.Reflection.Metadata;
+
+namespace GameEngine
 {
     public sealed class Transform
     {
@@ -30,6 +32,11 @@
         {
             this.Id = Count;
             this._Rect = new Rect(pos, size);
+        }
+
+        public override string ToString()
+        {
+            return $"({ Pos }, { Size })";
         }
     }
 }

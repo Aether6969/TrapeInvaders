@@ -4,7 +4,7 @@ namespace TrapeInvaders
 {
     internal class InvaderGroupe : GameObj
     {
-        public List<Invader> invaders = new List<Invader>();
+        public List<Invader> Invaders = new List<Invader>();
 
         public bool MovingRight = true;
         public int FramesBeforeMove = 12;
@@ -19,14 +19,15 @@ namespace TrapeInvaders
         public override void Update()
         {
             if (!Game.OnecePerFrames(FramesBeforeMove)) return;
+            if (Invaders.Count == 0) return;
 
             Vec2 move = new Vec2();
-            if (invaders.Max((v) => v.Transform.Pos.x) + 5 > 49)
+            if (Invaders.Max((v) => v.Transform.Pos.x) + 5 > 49)
             {
                 MovingRight = false;
                 _Colided = true;
             }
-            else if (invaders.Min((v) => v.Transform.Pos.x) < 1)
+            else if (Invaders.Min((v) => v.Transform.Pos.x) < 1)
             {
                 MovingRight = true;
                 _Colided = true;
@@ -40,12 +41,10 @@ namespace TrapeInvaders
                 move.y = 1;
             }
 
-            foreach (Invader invader in invaders)
+            foreach (Invader invader in Invaders)
             {
                 invader.Transform.Pos += move; 
             }
-
-            
         }
     }
 }

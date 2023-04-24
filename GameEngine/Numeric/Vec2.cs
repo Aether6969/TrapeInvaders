@@ -8,7 +8,7 @@ namespace GameEngine
         public int x;
         public int y;
 
-        public double Len => Math.Sqrt(x * x + y * y);
+        public double Mag => Math.Sqrt(x * x + y * y);
 
         public Vec2(int x, int y)
         {
@@ -47,6 +47,23 @@ namespace GameEngine
         public static Vec2 operator - (Vec2 left, Vec2 right)
         {
             return new Vec2(left.x - right.x, left.y - right.y);
+        }
+
+        public static bool operator < (Vec2 left, Vec2 right)
+        {
+            return left < right.x && left < right.y;
+        }
+        public static bool operator > (Vec2 left, Vec2 right)
+        {
+            return left > right.x && left > right.y;
+        }
+        public static bool operator < (Vec2 vec, int upper)
+        {
+            return vec.x < upper && vec.y < upper;
+        }
+        public static bool operator > (Vec2 vec, int lower)
+        {
+            return vec.x > lower && vec.y > lower;
         }
 
         public override string ToString()

@@ -8,18 +8,24 @@ namespace TrapeInvaders
         public SpaceInvaders(IInputManager inputManager, IRenderTarget renderTarget) : 
             base(inputManager, renderTarget)
         {
-            SetUpSapceInvaders();
+            SetUpSpaceInvaders();
         }
 
-        private void SetUpSapceInvaders()
+        private void SetUpSpaceInvaders()
         {
+            GameState.Health = 3;
+            GameState.Score = 0;
+
             AddObjectToScene(
                 Player.Create(
-                    new Vec2(22, 88),
+                    new Vec2(22, 87),
                     this,
                     GameState));
 
             AddInvadersToScene();
+
+            AddObjectToScene(
+                Hud.Create(this));
         }
 
         private void AddInvadersToScene()

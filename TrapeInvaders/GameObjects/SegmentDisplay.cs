@@ -26,12 +26,18 @@ namespace TrapeInvaders
             : base(game, transform, null)
         {
             this.Digits = new DigitTexture[numDigits];
+
+            for (int d = 0; d < Digits.Length; d++)
+            {
+                Digits[d] = new DigitTexture(0);
+            }
+
             Texture = new SegmentDisplayTexture(5, Digits);
         }
 
         public static SegmentDisplay Create(int numDigits, Game game, Vec2 pos)
         {
-            return new SegmentDisplay(numDigits, game, new Transform(pos, new Vec2(numDigits * 4 - 1, 5)));
+            return new SegmentDisplay(numDigits, game, new Transform(pos, new Vec2(numDigits * 4, 5)));
         }
 
         private void SetDisplayToNumber(int number)

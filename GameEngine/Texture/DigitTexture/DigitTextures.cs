@@ -5,17 +5,17 @@
         private readonly static byte[] _Digit0 =
             new byte[3 * 5]
             {
-                1, 1, 1,
+                0, 1, 0,
                 1, 0, 1,
                 1, 0, 1,
                 1, 0, 1,
-                1, 1, 1,
+                0, 1, 0,
             };
         private readonly static byte[] _Digit1 =
             new byte[3 * 5]
             {
                 0, 1, 0,
-                0, 1, 0,
+                1, 1, 1,
                 0, 1, 0,
                 0, 1, 0,
                 0, 1, 0,
@@ -23,19 +23,19 @@
         private readonly static byte[] _Digit2 =
             new byte[3 * 5]
             {
-                1, 1, 1,
+                1, 1, 0,
                 0, 0, 1,
-                1, 1, 1,
-                1, 0, 0,
-                1, 1, 1,
+                0, 1, 0,
+                1, 1, 0,
+                0, 0, 1,
             };
         private readonly static byte[] _Digit3 =
             new byte[3 * 5]
             {
                 1, 1, 1,
-                0, 0, 1,
+                0, 1, 0,
                 1, 1, 1,
-                0, 0, 1,
+                0, 1, 0,
                 1, 1, 1,
             };
         private readonly static byte[] _Digit4 =
@@ -44,23 +44,23 @@
                 1, 0, 1,
                 1, 0, 1,
                 1, 1, 1,
-                0, 0, 1,
-                0, 0, 1,
+                0, 1, 0,
+                0, 1, 0,
             };
         private readonly static byte[] _Digit5 =
             new byte[3 * 5]
             {
                 1, 1, 1,
+                1, 0, 1,
                 1, 0, 0,
-                1, 1, 1,
-                0, 0, 1,
+                0, 1, 1,
                 1, 1, 1,
             };
         private readonly static byte[] _Digit6 =
             new byte[3 * 5]
             {
-                1, 1, 1,
-                1, 0, 0,
+                0, 1, 1,
+                0, 1, 0,
                 1, 1, 1,
                 1, 0, 1,
                 1, 1, 1,
@@ -68,8 +68,8 @@
         private readonly static byte[] _Digit7 =
             new byte[3 * 5]
             {
+                1, 0, 0,
                 1, 1, 1,
-                0, 0, 1,
                 0, 0, 1,
                 0, 0, 1,
                 0, 0, 1,
@@ -77,11 +77,11 @@
         private readonly static byte[] _Digit8 =
             new byte[3 * 5]
             {
-                1, 1, 1,
+                0, 1, 0,
                 1, 0, 1,
                 1, 1, 1,
                 1, 0, 1,
-                1, 1, 1,
+                0, 1, 0,
             };
         private readonly static byte[] _Digit9 =
             new byte[3 * 5]
@@ -89,8 +89,8 @@
                 1, 1, 1,
                 1, 0, 1,
                 1, 1, 1,
-                0, 0, 1,
-                0, 0, 1,
+                0, 1, 0,
+                1, 1, 0,
             };
 
         public static MonoColTexture GetTextureByDigit(byte digit)

@@ -16,13 +16,13 @@
             {
                 const int pixXperDigit = 4;
 
-                if (x % pixXperDigit == 0)
+                if (x % pixXperDigit == 3)
                 {
                     return Pixel.None;
                 }
 
                 DigitTexture digit = Digits[x / pixXperDigit];
-                return digit[x, y];
+                return digit[x % pixXperDigit, y % pixXperDigit];
             }
         }
     }

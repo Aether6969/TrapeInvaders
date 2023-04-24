@@ -1,4 +1,6 @@
-﻿namespace GameEngine
+﻿using System.Runtime.CompilerServices;
+
+namespace GameEngine
 {
     public abstract class Game
     {
@@ -8,6 +10,7 @@
         public long FramesFromStart { get; private set; } = 0;
         public double TicksPerSecond { get; set; } = 30;
 
+        List<GameObj> Inserts = new List<GameObj>();
         Dictionary<int, GameObj> _GameObjects = new Dictionary<int, GameObj>();
 
         bool _Running = false;
@@ -21,28 +24,6 @@
 
         public void Run()
         {
-            //while (true)
-            //{
-            //    for (int x = 0; x < RenderTarget.Size.x; x++)
-            //    {
-            //        for (int y = 0; y < RenderTarget.Size.y; y++)
-            //        {
-            //            double timeMod = (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond) * 0.01;
-
-            //            double dist = (new Vec2(x, y) - new Vec2(25, 50)).Len;
-
-            //            Pixel pix = 
-            //                new Pixel(255, 0, 0) * (Math.Abs(Math.Cos((dist + timeMod) * 0.2d))) +
-            //                new Pixel(0, 0, 255) * (Math.Abs(Math.Sin((dist + timeMod) * 0.2d)));
-
-            //            RenderTarget[x, y] = pix;
-            //        }
-            //    }
-
-            //    RenderTarget.Draw();
-            //}
-
-
             _Running = true;
 
             InizializeGameObjects();
@@ -73,11 +54,22 @@
 
             RenderTarget.Clear(Pixel.None);
 
+            AddInserts();
+
             UpdateGameObjects();
 
             DrawGameObjects();
 
             RenderTarget.Draw();
+        }
+
+        private void AddInserts()
+        {
+            for (int i = 0; i < Inserts.Count; i++)
+            {
+                _GameObjects.Add(Inserts[i].Transform.Id, Inserts[i]);
+            }
+            Inserts.Clear();
         }
 
         public void Cancel() 
@@ -94,11 +86,20 @@
         {
             _GameObjects.Add(gameObj.Transform.Id, gameObj);
         }
+
+        /// <summary>
+        /// Runs the inizialize on the gameObj and adds it to the game next frame
+        /// </summary>
+        /// <param name="gameObj"></param>
         public void Instantiate(GameObj gameObj)
         {
-            AddObjectToScene(gameObj);
+            Inserts.Add(gameObj);
             gameObj.Inizialize();
         }
+        /// <summary>
+        /// Removes a gameObj from the game emidiatly
+        /// </summary>
+        /// <param name="gameObj"></param>
         public void RemoveObject(GameObj gameObj)
         {
             _GameObjects.Remove(gameObj.Transform.Id);
@@ -108,22 +109,20 @@
             _GameObjects.Clear();
         }
 
-        public List<GameObj> OverLaps(GameObj gameObj)
+        public IEnumerable<GameObj> OverLaps(GameObj gameObj)
         {
-            List<GameObj> overlaping = new List<GameObj>();
             foreach (GameObj obj in _GameObjects.Values)
             {
                 if (GameObj.Overlaps(gameObj, obj))
                 {
-                    overlaping.Add(obj);
+                    yield return obj;
                 }
             }
-            return overlaping; 
         }
 
         public bool OnecePerFrames(int numFrams)
         {
-            return FramesFromStart % numFrams == numFrams - 1 ? true : false;
+            return FramesFromStart % numFrams == numFrams - 1;
         }
 
         private void InizializeGameObjects()

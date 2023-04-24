@@ -14,5 +14,10 @@
         }
 
         public abstract Pixel this[int x, int y] { get; }
+
+        public override string ToString()
+        {
+            return Size.ToString();
+        }
     }
 }

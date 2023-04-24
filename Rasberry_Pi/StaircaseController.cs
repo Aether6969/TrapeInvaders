@@ -1,21 +1,12 @@
-﻿using TrapeInvaders;
+﻿using GameEngine;
 using System.Device.Gpio;
-using Iot.Device.ExplorerHat;
 
 namespace Rasberry_Pi
 {
     internal sealed class StaircaseController : IInputManager
     {
-        //GpioController GpioController;
-
         public StaircaseController()
-        { 
-            //this.GpioController = new GpioController();
-
-            //GpioController.OpenPin(16, PinMode.Input);
-            //GpioController.OpenPin(20, PinMode.Input);
-            //GpioController.OpenPin(21, PinMode.Input);
-
+        {
         }
 
         public float Vertical => throw new NotImplementedException();
@@ -29,7 +20,7 @@ namespace Rasberry_Pi
 
                 if (Console.KeyAvailable)
                 {
-                   ConsoleKeyInfo key = Console.ReadKey();
+                    ConsoleKeyInfo key = Console.ReadKey();
 
                     if (key.KeyChar is 'a' or 'A')
                     {

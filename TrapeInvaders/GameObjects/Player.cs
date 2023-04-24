@@ -2,9 +2,11 @@
 
 namespace TrapeInvaders
 {
-    public sealed class Player : GameObj
+    internal sealed class Player : GameObj
     {
         public GameState GameState { get; }
+        public Projectile? Projectil;
+
         private Player(Transform transform, Game game, GameState gameState) 
             : base(game, transform, Textures.Player) 
         { 
@@ -33,7 +35,7 @@ namespace TrapeInvaders
 
             Transform.Pos = new Vec2(x, Transform.Pos.y);
 
-            if (input.GetKeyShoot())
+            if (Projectil is null && input.GetKeyShoot())
             {
                 Shoot();
             }
@@ -41,7 +43,12 @@ namespace TrapeInvaders
 
         public void Shoot()
         {
-
+            Game.Instantiate(
+                Projectile.Create(
+                    Game,
+                    Transform.Pos + new Vec2(3, -3),
+                    this,
+                    true));
         }
     }
 }

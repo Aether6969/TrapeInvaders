@@ -29,10 +29,10 @@ namespace GameEngine
 
         public static bool Overlaps(Rect r1, Rect r2)
         {
-            if (r1.Pos.x + r1.Size.x < r2.Pos.x || 
-                r2.Pos.x + r2.Size.x < r1.Pos.x || 
-                r1.Pos.y + r1.Size.y < r2.Pos.y || 
-                r2.Pos.y + r2.Size.y < r1.Pos.y)
+            if (r2.Pos.x < r1.Pos.x + r1.Size.x &&
+                r1.Pos.x < r2.Pos.x + r2.Size.x &&
+                r2.Pos.y < r1.Pos.y + r1.Size.y &&
+                r1.Pos.y < r2.Pos.y + r2.Size.y)
             {
                 return true;
             }

@@ -12,39 +12,45 @@ namespace TrapeInvaders
 
         private MonoColTexture _ButtomStrip;
 
-        public Hud(Game game, Transform transform) 
-            : base(game, transform, null)
+        public Hud(Game game) 
+            : base(game, new Transform(new Vec2(0, 93), new Vec2(50, 7)), null)
         {
             this._Score = Textures.Score;
-            game.Instantiate(
+            game.AddObjectToScene(
                 EmptyGameObj.Create(
                     game,
                     new Vec2(0, 95),
                     _Score));
 
-            this._SegmentDisplay = SegmentDisplay.Create(5, game, new Vec2(22, 95));
-            game.Instantiate(_SegmentDisplay);
+            this._SegmentDisplay = SegmentDisplay.Create(5, game, new Vec2(21, 95));
+            game.AddObjectToScene(_SegmentDisplay);
 
             this._Heart = Textures.Heart;
-            game.Instantiate(
+            game.AddObjectToScene(
                 EmptyGameObj.Create(
                     game,
                     new Vec2(41, 95),
                     _Heart));
 
-            this._HealthDigit = new DigitTexture(3, 5, 3);
-            game.Instantiate(
+            this._HealthDigit = new DigitTexture(3);
+            _HealthDigit.Color = Pixel.HeartRed;
+            game.AddObjectToScene(
                 EmptyGameObj.Create(
                     game,
                     new Vec2(47, 95),
                     _HealthDigit));
 
             this._ButtomStrip = Textures.BottomStrip;
-            game.Instantiate(
+            game.AddObjectToScene(
                 EmptyGameObj.Create(
                     game,
                     new Vec2(0, 93),
                     _ButtomStrip));
+        }
+
+        public static Hud Create(Game game)
+        { 
+            return new Hud(game); 
         }
     }
 }

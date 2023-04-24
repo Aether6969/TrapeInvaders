@@ -891,7 +891,15 @@
           }
         }
       },
+      "GameEngine/1.0.0": {
+        "runtime": {
+          "GameEngine.dll": {}
+        }
+      },
       "TrapeInvaders/1.0.0": {
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
         "runtime": {
           "TrapeInvaders.dll": {}
         }
@@ -1069,6 +1077,11 @@
       "sha512": "sha512-S4rErosYZ+M7N2f76mx3DEZL/biGaUr1SJKfT8lTj7swFpyElcTcJG93rb2jTxzTKrSBDMFpLlYjpbCPEK/gfw==",
       "path": "unitsnet/4.77.0",
       "hashPath": "unitsnet.4.77.0.nupkg.sha512"
+    },
+    "GameEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "TrapeInvaders/1.0.0": {
       "type": "project",

@@ -19,7 +19,7 @@ namespace TrapeInvaders
         { 
             this.type = invaderType; 
             this.groupe = groupe;
-            groupe.invaders.Add(this);
+            groupe.Invaders.Add(this);
         }
 
         public static Invader Create(InvaderType invaderType, InvaderGroupe groupe, Vec2 pos, Game game)
@@ -34,7 +34,7 @@ namespace TrapeInvaders
         public void Destroy()
         {
             Game.RemoveObject(this);
-            groupe.invaders.Remove(this);
+            groupe.Invaders.Remove(this);
         }
     }
 }
