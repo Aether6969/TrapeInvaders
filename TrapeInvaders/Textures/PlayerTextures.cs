@@ -11,7 +11,7 @@ namespace TrapeInvaders
                 1, 1, 1, 1, 1, 1, 1,
                 1, 0, 1, 1, 1, 0, 1,
                 0, 0, 1, 1, 1, 0, 0,
-                1, 0, 0, 1, 0, 0, 0,
+                0, 0, 0, 1, 0, 0, 0,
             };
         public static MonoColTexture Player => new MonoColTexture(7, 5, Pixel.PlayerGreen, _PlayerImage);
     }

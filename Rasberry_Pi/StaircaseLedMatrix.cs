@@ -33,8 +33,8 @@ namespace Rasberry_Pi
             {
                 //Reverses every odd line
                 int flatIndex;
-                int rowMod = (y * Size.x);
-                if (y % 2 == 1)
+                int rowMod = ((Size.y - 1 - y) * Size.x);
+                if (y % 2 == 0)
                 {
                     flatIndex = rowMod + ((Size.x - 1) - x);
                 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0sekHNQGvY5Y85CJK0XMAq9qjt6Hntf1NT7LSqK3G3A1lR2hHZYLHkNaNOKbOYsnxtdb8ZrC/RSpFAFsMoMzsg==",
+  "dgSpecHash": "GEyJEjxdrqSe9tBMwnbekiZTeCly016Hcfwqhp4U4iVcD7iN/27t3e9tCKeJ0T+Ru8QD/2LiK5tS24zSGjkiVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\GameEngine\\GameEngine.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rolfj\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm64\\7.0.2\\microsoft.netcore.app.runtime.linux-arm64.7.0.2.nupkg.sha512",
+    "C:\\Users\\Rolfj\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\7.0.2\\microsoft.aspnetcore.app.runtime.linux-arm64.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

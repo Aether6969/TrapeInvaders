@@ -22,7 +22,7 @@ namespace TrapeInvaders
                 0, 0, 1, 0, 0,
                 0, 1, 1, 1, 0,
                 1, 0, 0, 0, 1,
-                1, 1, 1, 1, 1,
+                0, 1, 1, 1, 0,
                 1, 0, 1, 0, 1,
             };
         public static MonoColTexture Alien2 => new MonoColTexture(5, 5, Pixel.AlienBlue, _Alien2Image);

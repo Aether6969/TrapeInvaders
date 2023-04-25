@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Numerics;
+using System.Runtime.CompilerServices;
 
 namespace GameEngine
 {
@@ -24,6 +25,25 @@ namespace GameEngine
 
         public void Run()
         {
+            while (true)
+            {
+                for (int x = 0; x < RenderTarget.Size.x; x++)
+                {
+                    for (int y = 0; y < RenderTarget.Size.y; y++)
+                    {
+                        double timemod = (Environment.TickCount64 / (double)TimeSpan.TicksPerSecond) * 100000;
+
+                        double len = (new Vec2(x, y) - new Vec2(25, 50)).Mag;
+
+                        RenderTarget[x, y] = 
+                            new Pixel(255, 0, 0) * (Math.Abs(Math.Cos((len + timemod) * 1d))) +
+                            new Pixel(0, 0, 255) * (Math.Abs(Math.Cos((len + -timemod) * 1d)));
+                    }
+                }
+
+                RenderTarget.Draw();
+            }
+
             _Running = true;
 
             InizializeGameObjects();

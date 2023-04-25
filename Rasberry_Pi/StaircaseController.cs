@@ -1,12 +1,21 @@
 ﻿using GameEngine;
+using Iot.Device.ExplorerHat;
 using System.Device.Gpio;
 
 namespace Rasberry_Pi
 {
     internal sealed class StaircaseController : IInputManager
     {
+        private GpioController Controller;
+
+        const int Pin1 = 16, Pin2 = 20, Pin3 = 21;
         public StaircaseController()
         {
+            this.Controller = new GpioController();
+
+            Controller.OpenPin(Pin1, PinMode.Input);
+            Controller.OpenPin(Pin2, PinMode.Input);
+            Controller.OpenPin(Pin3, PinMode.Input);
         }
 
         public float Vertical => throw new NotImplementedException();
@@ -18,18 +27,13 @@ namespace Rasberry_Pi
                 bool left = false;
                 bool right = false;
 
-                if (Console.KeyAvailable)
+                if ((bool)Controller.Read(Pin1))
                 {
-                    ConsoleKeyInfo key = Console.ReadKey();
-
-                    if (key.KeyChar is 'a' or 'A')
-                    {
-                        left = true;
-                    }
-                    if (key.KeyChar is 'd' or 'D')
-                    {
-                        right = true;
-                    }
+                    left = true;
+                }
+                if ((bool)Controller.Read(Pin2))
+                {
+                    right = true;
                 }
 
                 if (left)
@@ -49,14 +53,9 @@ namespace Rasberry_Pi
         {
             bool pressed = false;
 
-            if (Console.KeyAvailable)
+            if ((bool)Controller.Read(Pin3))
             {
-                ConsoleKeyInfo key = Console.ReadKey();
-
-                if (key.KeyChar is ' ')
-                {
-                    pressed = true;
-                }
+                pressed = true;
             }
 
             if (pressed)
