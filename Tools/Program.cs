@@ -2,6 +2,7 @@
 
 internal class Program
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "I canot be fucked to mange analyser setings between projects")]
     private static void Main(string[] args)
     {
         Console.WriteLine("Give path to an image");
@@ -11,7 +12,7 @@ internal class Program
 
         Bitmap bitmap = new Bitmap(image);
 
-        Graphics graphics = Graphics.FromImage(bitmap);
+        Graphics graphics = Graphics.FromImage(bitmap); //some build in functions for make more complex shapes
 
         for (int x = 0; x < bitmap.Width; x++)
         {
@@ -22,10 +23,55 @@ internal class Program
             }
         }
 
-        Console.WriteLine("save image to a path");
+        Console.WriteLine("save image as a c# class to a path");
 
         string destPath = Console.ReadLine()!;
 
-        bitmap.Save(destPath);
+        destPath = Path.ChangeExtension(destPath, ".cs");
+
+        string namespaceName    = "funnynamespace";
+
+        using (var writer = new StreamWriter(destPath))
+        {
+            writer.WriteLine("namespace " + namespaceName);
+            writer.WriteLine('{');
+
+            {
+                string tab = "\t";
+
+                writer.WriteLine(tab + "internal partial static class Textures");
+                writer.WriteLine(tab + "{");
+
+                {
+                    string tab2 = tab + tab;
+
+                    writer.WriteLine(tab2 + "public static readonly byte[] " + Path.GetFileNameWithoutExtension(path) + " =");
+                    writer.WriteLine("new byte[" + bitmap.Width + ", " + bitmap.Height + "]");
+                    writer.WriteLine(tab2 + "{");
+
+                    {
+                        string tab3 = tab + tab + tab;
+
+                        for (int y = 0; y < bitmap.Height; y++)
+                        {
+                            writer.Write(tab);
+                            for (int x = 0; x < bitmap.Width; x++)
+                            {
+                                Color color = bitmap.GetPixel(x, (bitmap.Height - 1 - y));
+                                writer.Write($"new Color({color.R}, {color.G}, {color.B}), ");
+                            }
+                        }
+                    }
+
+                    writer.WriteLine(tab2 + "};");
+                }
+
+                writer.WriteLine(tab + "}");
+            }
+            
+            writer.WriteLine('}');
+
+            writer.Flush();
+        }
     }
 }

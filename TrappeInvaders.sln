@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvadersFormsTest", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrapeInvaders", "TrapeInvaders\TrapeInvaders.csproj", "{70952702-1DF4-4FDA-8464-31588B19F1F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trappeworks", "Trappeworks\Trappeworks.csproj", "{A926757F-2629-4699-99C9-13C1C9C97A18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trappeworks", "Trappeworks\Trappeworks.csproj", "{A926757F-2629-4699-99C9-13C1C9C97A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{8315F212-438D-4A40-9C31-AB802046958D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,12 @@ Global
 		{A926757F-2629-4699-99C9-13C1C9C97A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A926757F-2629-4699-99C9-13C1C9C97A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A926757F-2629-4699-99C9-13C1C9C97A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8315F212-438D-4A40-9C31-AB802046958D}.Assert|Any CPU.ActiveCfg = Debug|Any CPU
+		{8315F212-438D-4A40-9C31-AB802046958D}.Assert|Any CPU.Build.0 = Debug|Any CPU
+		{8315F212-438D-4A40-9C31-AB802046958D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8315F212-438D-4A40-9C31-AB802046958D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8315F212-438D-4A40-9C31-AB802046958D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8315F212-438D-4A40-9C31-AB802046958D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
