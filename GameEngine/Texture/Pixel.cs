@@ -25,6 +25,15 @@ namespace GameEngine
         public static readonly Pixel FunnyYellow    = new Pixel(255, 255, 0);
         public static readonly Pixel HeartRed       = new Pixel(255, 0, 0);
 
+        
+        public static Pixel Random()
+        {
+            return new Pixel(
+                System.Random.Shared.Next(0, 256), 
+                System.Random.Shared.Next(0, 256), 
+                System.Random.Shared.Next(0, 256));
+        }
+
         public static Pixel operator + (Pixel left, Pixel right)
         {
             return new Pixel(

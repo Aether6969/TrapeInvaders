@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nxeGsfKb39aG3PxzSvY96vhbyjZ57v/YKGtmAeMhuPfwFne9s/6PmGxgf3fPdenz1oe0M/n7Lc7EwVDxVAV+wQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Tools\\Tools.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rolfj\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Rolfj\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

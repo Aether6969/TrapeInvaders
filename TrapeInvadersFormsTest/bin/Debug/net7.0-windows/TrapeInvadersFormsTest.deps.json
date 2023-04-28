@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "TrapeInvadersFormsTest/1.0.0": {
         "dependencies": {
-          "TrapeInvaders": "1.0.0"
+          "TrapeInvaders": "1.0.0",
+          "Trappeworks": "1.0.0"
         },
         "runtime": {
           "TrapeInvadersFormsTest.dll": {}
@@ -26,6 +27,14 @@
         "runtime": {
           "TrapeInvaders.dll": {}
         }
+      },
+      "Trappeworks/1.0.0": {
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
+        "runtime": {
+          "Trappeworks.dll": {}
+        }
       }
     }
   },
@@ -41,6 +50,11 @@
       "sha512": ""
     },
     "TrapeInvaders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Trappeworks/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

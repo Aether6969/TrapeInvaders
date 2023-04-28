@@ -1,0 +1,15 @@
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\bin\Debug\net7.0\Trappeworks.deps.json
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\bin\Debug\net7.0\Trappeworks.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\bin\Debug\net7.0\Trappeworks.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\bin\Debug\net7.0\GameEngine.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\bin\Debug\net7.0\GameEngine.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.csproj.AssemblyReference.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.AssemblyInfoInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.AssemblyInfo.cs
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.csproj.CoreCompileInputs.cache
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.csproj.CopyComplete
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\refint\Trappeworks.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\Trappeworks.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Trappeworks\obj\Debug\net7.0\ref\Trappeworks.dll

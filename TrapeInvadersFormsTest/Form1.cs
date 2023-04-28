@@ -1,4 +1,5 @@
 using TrapeInvaders;
+using Trappeworks;
 using GameEngine;
 
 namespace TrapeInvadersFormsTest
@@ -48,7 +49,7 @@ namespace TrapeInvadersFormsTest
             {
                 WFInputController controller = new WFInputController();
 
-                Game game = new SpaceInvaders(controller, renderTarget);
+                Game game = new Trapeworks(controller, renderTarget);
                 game.Run();
             });
 

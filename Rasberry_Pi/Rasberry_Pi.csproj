@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TrapeInvaders\TrapeInvaders.csproj" />
+    <ProjectReference Include="..\Trappeworks\Trappeworks.csproj" />
   </ItemGroup>
 
 </Project>

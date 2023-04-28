@@ -25,24 +25,28 @@ namespace GameEngine
 
         public void Run()
         {
-            while (true)
-            {
-                for (int x = 0; x < RenderTarget.Size.x; x++)
-                {
-                    for (int y = 0; y < RenderTarget.Size.y; y++)
-                    {
-                        double timemod = (Environment.TickCount64 / (double)TimeSpan.TicksPerSecond) * 100000;
+            //while (true)
+            //{
+            //    for (int x = 0; x < RenderTarget.Size.x; x++)
+            //    {
+            //        for (int y = 0; y < RenderTarget.Size.y; y++)
+            //        {
+            //            double timemod = (Environment.TickCount64 / (double)TimeSpan.TicksPerSecond) * 100000;
 
-                        double len = (new Vec2(x, y) - new Vec2(25, 50)).Mag;
+            //            Vec2 pos = new Vec2(x, y) - new Vec2(25, 50);
 
-                        RenderTarget[x, y] = 
-                            new Pixel(255, 0, 0) * (Math.Abs(Math.Cos((len + timemod) * 1d))) +
-                            new Pixel(0, 0, 255) * (Math.Abs(Math.Cos((len + -timemod) * 1d)));
-                    }
-                }
+            //            double len = pos.Mag;
 
-                RenderTarget.Draw();
-            }
+            //            double angle = Math.Atan2(pos.y, pos.x);
+
+            //            RenderTarget[x, y] =
+            //                new Pixel(255, 0, 0) * (Math.Abs(Math.Cos((len + Math.Sin((angle + timemod * 0.01) * 7) * 2 + timemod) * 0.3d))) +
+            //                new Pixel(0, 0, 255) * (Math.Abs(Math.Cos((len + Math.Sin((angle + timemod * -0.01) * 7) * 2 - timemod) * 0.3d)));
+            //        }
+            //    }
+
+            //    RenderTarget.Draw();
+            //}
 
             _Running = true;
 

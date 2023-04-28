@@ -13,7 +13,7 @@ namespace GameEngine
 
         public Rect(Vec2 Pos, Vec2 Size)
         {
-            Assert.Positive(Pos);
+            Assert.Positive(Size);
 
             this.Pos = Pos;
             this.Size = Size;
