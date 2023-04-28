@@ -71,6 +71,10 @@ namespace GameEngine
         {
             return Color.FromArgb(pixel.R, pixel.G, pixel.B);
         }
+        public static implicit operator Pixel(Color color)
+        {
+            return new Pixel(color.R, color.G, color.B);
+        }
 
         public override string ToString()
         {

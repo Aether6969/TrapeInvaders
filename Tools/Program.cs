@@ -8,7 +8,7 @@ internal class Program
         Console.WriteLine("Give path to an image");
         string path = Console.ReadLine()!;
 
-        Image image = Image.FromFile(path); //he he funny warning
+        Image image = Image.FromFile(path);
 
         Bitmap bitmap = new Bitmap(image);
 
@@ -27,12 +27,15 @@ internal class Program
 
         string destPath = Console.ReadLine()!;
 
-        destPath = Path.ChangeExtension(destPath, ".cs");
+        destPath = Path.ChangeExtension(Path.Combine(destPath, Path.GetFileNameWithoutExtension(path)), ".cs");
 
-        string namespaceName    = "funnynamespace";
+        string namespaceName = "funnynamespace";
 
         using (var writer = new StreamWriter(destPath))
         {
+            writer.WriteLine("using System.Drawing;");
+            writer.WriteLine();
+
             writer.WriteLine("namespace " + namespaceName);
             writer.WriteLine('{');
 
@@ -46,7 +49,7 @@ internal class Program
                     string tab2 = tab + tab;
 
                     writer.WriteLine(tab2 + "public static readonly byte[] " + Path.GetFileNameWithoutExtension(path) + " =");
-                    writer.WriteLine("new byte[" + bitmap.Width + ", " + bitmap.Height + "]");
+                    writer.WriteLine(tab2 + "new Color[" + bitmap.Width + ", " + bitmap.Height + "]");
                     writer.WriteLine(tab2 + "{");
 
                     {
@@ -54,7 +57,7 @@ internal class Program
 
                         for (int y = 0; y < bitmap.Height; y++)
                         {
-                            writer.Write(tab);
+                            writer.Write(tab3);
                             for (int x = 0; x < bitmap.Width; x++)
                             {
                                 Color color = bitmap.GetPixel(x, (bitmap.Height - 1 - y));
@@ -70,8 +73,6 @@ internal class Program
             }
             
             writer.WriteLine('}');
-
-            writer.Flush();
         }
     }
 }
