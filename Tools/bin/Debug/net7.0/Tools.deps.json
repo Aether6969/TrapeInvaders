@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Tools/1.0.0": {
         "dependencies": {
+          "GameEngine": "1.0.0",
           "System.Drawing.Common": "7.0.0"
         },
         "runtime": {
@@ -48,6 +49,11 @@
             "fileVersion": "7.0.22.51805"
           }
         }
+      },
+      "GameEngine/1.0.0": {
+        "runtime": {
+          "GameEngine.dll": {}
+        }
       }
     }
   },
@@ -70,6 +76,11 @@
       "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
       "path": "system.drawing.common/7.0.0",
       "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
+    },
+    "GameEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

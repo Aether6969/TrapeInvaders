@@ -18,3 +18,5 @@ C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Tools\obj\Debug\net7.0\refint\To
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Tools\obj\Debug\net7.0\Tools.pdb
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Tools\obj\Debug\net7.0\Tools.genruntimeconfig.cache
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Tools\obj\Debug\net7.0\ref\Tools.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Tools\bin\Debug\net7.0\GameEngine.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Tools\bin\Debug\net7.0\GameEngine.pdb

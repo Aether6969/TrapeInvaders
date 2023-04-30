@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.InteropServices;
 
 internal class Program
 {
@@ -33,7 +34,7 @@ internal class Program
 
         using (var writer = new StreamWriter(destPath))
         {
-            writer.WriteLine("using System.Drawing;");
+            writer.WriteLine("using GameEngine;");
             writer.WriteLine();
 
             writer.WriteLine("namespace " + namespaceName);
@@ -49,7 +50,7 @@ internal class Program
                     string tab2 = tab + tab;
 
                     writer.WriteLine(tab2 + "public static readonly byte[] " + Path.GetFileNameWithoutExtension(path) + " =");
-                    writer.WriteLine(tab2 + "new Color[" + bitmap.Width + ", " + bitmap.Height + "]");
+                    writer.WriteLine(tab2 + "new byte[" + bitmap.Width + " * " + bitmap.Height + " * (3)" + " ]");
                     writer.WriteLine(tab2 + "{");
 
                     {
@@ -60,8 +61,8 @@ internal class Program
                             writer.Write(tab3);
                             for (int x = 0; x < bitmap.Width; x++)
                             {
-                                Color color = bitmap.GetPixel(x, (bitmap.Height - 1 - y));
-                                writer.Write($"new Color({color.R}, {color.G}, {color.B}), ");
+                                Color color = bitmap.GetPixel(x, y);
+                                writer.Write($"{color.R}, {color.G}, {color.B}, ");
                             }
                         }
                     }
