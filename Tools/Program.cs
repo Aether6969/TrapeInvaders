@@ -43,14 +43,17 @@ internal class Program
             {
                 string tab = "\t";
 
-                writer.WriteLine(tab + "internal partial static class Textures");
+                writer.WriteLine(tab + "internal static partial class Textures");
                 writer.WriteLine(tab + "{");
 
                 {
                     string tab2 = tab + tab;
 
-                    writer.WriteLine(tab2 + "public static readonly byte[] " + Path.GetFileNameWithoutExtension(path) + " =");
-                    writer.WriteLine(tab2 + "new byte[" + bitmap.Width + " * " + bitmap.Height + " * (3)" + " ]");
+                    string texName = Path.GetFileNameWithoutExtension(path);
+
+                    writer.WriteLine(tab2 + $"public static ColorTexture { texName } => new ColorTexture({ bitmap.Width }, { bitmap.Height }, { "_" + texName });");
+                    writer.WriteLine(tab2 + "private static readonly byte[] " + "_" + texName + " =");
+                    writer.WriteLine(tab2 + "new byte[" + bitmap.Width + " * " + bitmap.Height + " * (3)" + "]");
                     writer.WriteLine(tab2 + "{");
 
                     {
@@ -64,6 +67,7 @@ internal class Program
                                 Color color = bitmap.GetPixel(x, y);
                                 writer.Write($"{color.R}, {color.G}, {color.B}, ");
                             }
+                            writer.Write(Environment.NewLine);
                         }
                     }
 
