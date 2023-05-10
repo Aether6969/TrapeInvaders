@@ -30,18 +30,11 @@ namespace Rasberry_Pi
                 if ((bool)Controller.Read(Pin1))
                 {
                     left = true;
+                    Log.Msg("Pressed left");
                 }
                 if ((bool)Controller.Read(Pin2))
                 {
                     right = true;
-                }
-
-                if (left)
-                {
-                    Log.Msg("Pressed left");
-                }
-                if (right)
-                {
                     Log.Msg("Pressed right");
                 }
 
@@ -56,12 +49,7 @@ namespace Rasberry_Pi
             if ((bool)Controller.Read(Pin3))
             {
                 pressed = true;
-            }
-
-            if (pressed)
-            {
                 Log.Msg("Pressed shoot");
-                Log.Msg("Time " + DateTime.Now.Microsecond);
             }
 
             return pressed;

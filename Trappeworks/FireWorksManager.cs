@@ -20,13 +20,13 @@ namespace Trappeworks
 
         public override void Update()
         {
-            if (!Game.OnecePerFrames(15)) return;
+            if (!Game.OnecePerFrames(1)) return;
 
             Vec2 pos = new Vec2(Random.Shared.Next(-100, 100), Random.Shared.Next(-100, 100));
 
-            GameObj explotion = Explotion.CreateRandomExplotion(Game, pos);
+            Explotion explotion = Explotion.CreateRandomExplotion(Game, pos);
 
-            if (Game.OverLaps(explotion).Where((o) => o is Explotion).Count() == 0)
+            if (Game.GetAllObjects().Where((o) => o is Explotion).Count() == 0)
             {
                 Game.Instantiate(explotion);
             }

@@ -27,11 +27,11 @@ namespace Trappeworks
 
                 double angle = Math.Atan2(pos.y, pos.x);
 
-                double timemod = (Environment.TickCount64 / (double)TimeSpan.TicksPerSecond) * 1000;
+                double timemod = (Environment.TickCount64 / (double)TimeSpan.TicksPerSecond) * 1000 * speed;
 
                 //return color * ((len) / (diameter / 2));
 
-                return color * Math.Abs(Math.Cos((len + Math.Sin((angle + timemod * speed) * pedals) + timemod) * thicknes));
+                return color * Math.Abs(Math.Cos((len + Math.Sin((angle + timemod) * pedals) + timemod) * thicknes));
             };
 
             return new FunctionalTexture(diameter, diameter, func);

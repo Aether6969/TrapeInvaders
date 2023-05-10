@@ -18,10 +18,7 @@
 
         public void Draw()
         {
-            if (Texture is null)
-            {
-                return;
-            }
+            if (Texture is null) return;
 
             for (int x = 0; x < Texture.Width; x++)
             {

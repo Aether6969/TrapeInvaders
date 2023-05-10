@@ -198,5 +198,7 @@ C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\p
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\libSystem.IO.Ports.Native.so
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\GameEngine.dll
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\TrapeInvaders.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\Trappeworks.dll
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\TrapeInvaders.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\Trappeworks.pdb
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\publish\linux-arm64\GameEngine.pdb

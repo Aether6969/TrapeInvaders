@@ -78,3 +78,5 @@ C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\obj\Release\net7.0\R
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\obj\Release\net7.0\ref\Rasberry_Pi.dll
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\GameEngine.dll
 C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\GameEngine.pdb
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\Trappeworks.dll
+C:\Users\Rolfj\Desktop\Repost Git\TrapeInvaders\Rasberry_Pi\bin\Release\net7.0\Trappeworks.pdb

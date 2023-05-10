@@ -6,10 +6,8 @@ namespace Trappeworks
     {
         public Trapeworks(IInputManager inputManager, IRenderTarget renderTarget) : base(inputManager, renderTarget)
         {
-            //AddObjectToScene(
-            //    FireWorksManager.Create(this));
-
-            AddObjectToScene(EmptyGameObj.Create(this, 0, funnynamespace.Textures.image));
+            AddObjectToScene(
+                FireWorksManager.Create(this));
         }
     }
 }

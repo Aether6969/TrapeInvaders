@@ -10,7 +10,8 @@
         "dependencies": {
           "Iot.Device.Bindings": "2.2.0",
           "System.Device.Gpio": "2.2.0",
-          "TrapeInvaders": "1.0.0"
+          "TrapeInvaders": "1.0.0",
+          "Trappeworks": "1.0.0"
         },
         "runtime": {
           "Rasberry_Pi.dll": {}
@@ -257,6 +258,14 @@
         "runtime": {
           "TrapeInvaders.dll": {}
         }
+      },
+      "Trappeworks/1.0.0": {
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
+        "runtime": {
+          "Trappeworks.dll": {}
+        }
       }
     }
   },
@@ -433,6 +442,11 @@
       "sha512": ""
     },
     "TrapeInvaders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Trappeworks/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

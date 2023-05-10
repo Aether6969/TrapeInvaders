@@ -414,6 +414,19 @@
         "runtime": {
           "bin/placeholder/TrapeInvaders.dll": {}
         }
+      },
+      "Trappeworks/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trappeworks.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trappeworks.dll": {}
+        }
       }
     },
     "net7.0/linux-arm64": {
@@ -743,6 +756,19 @@
         },
         "runtime": {
           "bin/placeholder/TrapeInvaders.dll": {}
+        }
+      },
+      "Trappeworks/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trappeworks.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trappeworks.dll": {}
         }
       }
     }
@@ -1410,13 +1436,19 @@
       "type": "project",
       "path": "../TrapeInvaders/TrapeInvaders.csproj",
       "msbuildProject": "../TrapeInvaders/TrapeInvaders.csproj"
+    },
+    "Trappeworks/1.0.0": {
+      "type": "project",
+      "path": "../Trappeworks/Trappeworks.csproj",
+      "msbuildProject": "../Trappeworks/Trappeworks.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Iot.Device.Bindings >= 2.2.0",
       "System.Device.Gpio >= 2.2.0",
-      "TrapeInvaders >= 1.0.0"
+      "TrapeInvaders >= 1.0.0",
+      "Trappeworks >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1453,6 +1485,9 @@
           "projectReferences": {
             "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\TrapeInvaders\\TrapeInvaders.csproj": {
               "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\TrapeInvaders\\TrapeInvaders.csproj"
+            },
+            "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Trappeworks\\Trappeworks.csproj": {
+              "projectPath": "C:\\Users\\Rolfj\\Desktop\\Repost Git\\TrapeInvaders\\Trappeworks\\Trappeworks.csproj"
             }
           }
         }

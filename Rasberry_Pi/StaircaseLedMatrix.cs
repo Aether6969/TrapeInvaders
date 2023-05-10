@@ -31,7 +31,7 @@ namespace Rasberry_Pi
         { 
             set
             {
-                //Reverses every odd line
+                //Reverses every even line
                 int flatIndex;
                 int rowMod = ((Size.y - 1 - y) * Size.x);
                 if (y % 2 == 0)

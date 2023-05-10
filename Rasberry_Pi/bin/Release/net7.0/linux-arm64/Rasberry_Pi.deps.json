@@ -12,6 +12,7 @@
           "Iot.Device.Bindings": "2.2.0",
           "System.Device.Gpio": "2.2.0",
           "TrapeInvaders": "1.0.0",
+          "Trappeworks": "1.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.linux-arm64": "7.0.2"
         },
         "runtime": {
@@ -903,6 +904,14 @@
         "runtime": {
           "TrapeInvaders.dll": {}
         }
+      },
+      "Trappeworks/1.0.0": {
+        "dependencies": {
+          "GameEngine": "1.0.0"
+        },
+        "runtime": {
+          "Trappeworks.dll": {}
+        }
       }
     }
   },
@@ -1084,6 +1093,11 @@
       "sha512": ""
     },
     "TrapeInvaders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Trappeworks/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
